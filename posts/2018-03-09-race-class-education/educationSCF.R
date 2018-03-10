@@ -7,7 +7,6 @@ scf <- read.csv("scf.csv")[,-1]
 
 # codebook for summary variables available at http://sda.berkeley.edu/sdaweb/docs/scfcomb/DOC/hcbk.htm
 
-# use dplyr or some shit
 # compress to year, race, education, median net worth, mean net worth, median income, mean income
 
 scf$YEAR = as.numeric(scf$YEAR)
