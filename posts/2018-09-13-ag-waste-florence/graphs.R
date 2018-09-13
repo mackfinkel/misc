@@ -131,7 +131,7 @@ FLORENCE <- ggplot(data = states) +
   geom_polygon(data=pgn, aes(long, lat, group = group), alpha = .2) +
   geom_path(data=ln, aes(long, lat, group = group)) +
   geom_point(data=ln, aes(long, lat, group = group), shape = 17) +
-  geom_point(data = TRIcleaner[TRIcleaner$YEAR == 1996,], mapping = aes(x = LONGITUDE, y = LATITUDE, color = WASTE)) +
+  geom_point(data = TRIcleaner[TRIcleaner$YEAR == 2016,], mapping = aes(x = LONGITUDE, y = LATITUDE, color = WASTE)) +
   coord_fixed(xlim = c(-87, -72),  ylim = c(31, 40.5), ratio = 1.3) +
   ylab(label = "") + xlab(label = "") +
   ggtitle(label = "Animal Waste on Hurricane Florence Path", subtitle = "2018 (path as of 9-13-18 12 AM, waste data from 2016)") +
